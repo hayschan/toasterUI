@@ -1,0 +1,10 @@
+<screen>
+	<view>
+		<lv_label text="About screen" align="top_mid" y="10" />
+		<lv_label
+			text="Add your project details here"
+			align="center"
+			style_text_align="center"
+		/>
+	</view>
+</screen>
