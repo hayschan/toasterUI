@@ -1,10 +1,60 @@
 <screen>
 	<view>
-		<lv_label text="About screen" align="top_mid" y="10" />
-		<lv_label
-			text="Add your project details here"
-			align="center"
-			style_text_align="center"
-		/>
+		<lv_obj width="56" height="218" x="8" align="left_mid" style_radius="16">
+			<lv_button width="46" height="54" x="5" y="8">
+				<lv_label text="Smart" />
+				<screen_create_event screen="screen_main" anim_type="move_right" duration="300" />
+			</lv_button>
+			<lv_button width="46" height="54" x="5" y="70">
+				<lv_label text="Manual" />
+			</lv_button>
+			<lv_button width="46" height="54" x="5" y="132">
+				<lv_label text="Settings" />
+				<screen_create_event screen="screen_settings" anim_type="move_left" duration="300" />
+			</lv_button>
+		</lv_obj>
+
+		<lv_label text="Manual setup" x="82" y="12" />
+
+		<lv_obj width="230" height="62" x="82" y="32" style_radius="12">
+			<lv_button width="95" height="44" x="12" y="9">
+				<lv_label text="L" />
+			</lv_button>
+			<lv_button width="95" height="44" x="124" y="9">
+				<lv_label text="R" />
+			</lv_button>
+		</lv_obj>
+
+		<lv_obj width="230" height="38" x="82" y="102" style_radius="18">
+			<lv_button width="30" height="26" x="8" y="6">
+				<lv_label text="P1" />
+			</lv_button>
+			<lv_button width="30" height="26" x="44" y="6">
+				<lv_label text="P2" />
+			</lv_button>
+			<lv_button width="30" height="26" x="80" y="6">
+				<lv_label text="P3" />
+			</lv_button>
+			<lv_button width="30" height="26" x="116" y="6">
+				<lv_label text="P4" />
+			</lv_button>
+		</lv_obj>
+
+		<lv_obj width="140" height="34" x="82" y="146" style_radius="17">
+			<lv_button width="64" height="24" x="6" y="5">
+				<lv_label text="Fresh" />
+			</lv_button>
+			<lv_button width="64" height="24" x="70" y="5">
+				<lv_label text="Frozen" />
+			</lv_button>
+		</lv_obj>
+
+		<lv_button width="64" height="28" x="82" y="188">
+			<lv_label text="Reset" />
+		</lv_button>
+		<lv_button width="160" height="36" x="150" y="184" style_radius="18">
+			<lv_label text="Start" />
+			<screen_create_event screen="screen_toasting_running" anim_type="move_top" duration="350" />
+		</lv_button>
 	</view>
 </screen>
